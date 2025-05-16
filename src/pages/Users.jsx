@@ -19,7 +19,7 @@ export default function Users() {
                     </li>
                 ))}
             </ul>
-            <Outlet /> {/* Nested dynamic route for user profile */}
+            <Outlet />
         </div>
     );
 }

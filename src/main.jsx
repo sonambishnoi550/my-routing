@@ -16,7 +16,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="users" element={<Users />}>
-            {/* Nested dynamic route */}
             <Route path=":userId" element={<UserProfile />} />
           </Route>
         </Route>
