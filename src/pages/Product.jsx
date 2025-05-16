@@ -1,12 +1,9 @@
-import { Link } from "react-router-dom";
+import React from 'react'
 
-const Product = () => (
-    <>
-        <h1>Products</h1>
-        <ul>
-            <li><Link to="/product/101">Product 101</Link></li>
-            <li><Link to="/product/202">Product 202</Link></li>
-        </ul>
-    </>
-);
-export default Product;
+const Product = () => {
+  return (
+    <div>Product</div>
+  )
+}
+
+export default Product

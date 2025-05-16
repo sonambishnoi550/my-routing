@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter , Routes, Route } from "react-router-dom";
 import Product from "./pages/Product";
 import Contact from "./pages/Contact";
 import Layout from "./components/Layout";
@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -17,7 +17,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
-    </Router>
+      </BrowserRouter>
   );
 }
 
